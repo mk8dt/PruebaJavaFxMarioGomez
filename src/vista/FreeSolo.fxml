@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #D7CCC8;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SampleController">
+   <children>
+      <JFXButton fx:id="btnClose" layoutX="212.0" layoutY="450.0" onMouseClicked="#closeApp" prefHeight="25.0" prefWidth="176.0" style="-fx-background-color: WHITE;" styleClass=".button" text="CLOSE" />
+      <ImageView fitHeight="399.0" fitWidth="600.0" layoutX="1.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/rock-climbing-155134_1280.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

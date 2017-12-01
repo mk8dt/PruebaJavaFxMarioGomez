@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SampleController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <SplitPane dividerPositions="0.7264529058116233" prefHeight="533.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.62" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #795548;">
+                     <children>
+                        <ImageView fitHeight="483.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/freesolo.png" />
+                           </image>
+                        </ImageView>
+                        <HBox layoutX="219.0" layoutY="505.0" spacing="20.0">
+                           <children>
+                              <JFXButton style="-fx-background-color: WHITE; -fx-background-radius: 5px;" text="ABOUT US" />
+                              <JFXButton style="-fx-background-radius: 10px; -fx-border-color: white;" text="SIGNIN" />
+                           </children>
+                        </HBox>
+                        <VBox layoutX="134.0" layoutY="365.0">
+                           <children>
+                              <Label text="Create Your " textFill="WHITE">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Own Account" textFill="WHITE">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox layoutX="57.0" layoutY="143.0" spacing="40.0">
+                           <children>
+                              <JFXTextField promptText="FIRST NAME" />
+                              <JFXTextField promptText="LAST NAME" />
+                              <JFXTextField promptText="E-MAIL" />
+                              <JFXTextField promptText="PASSWORD" />
+                              <JFXTextField promptText="REPEAT PASSWORD" />
+                           </children>
+                        </VBox>
+                        <Label alignment="CENTER" layoutX="75.0" layoutY="21.0" prefHeight="113.0" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 50px;" text="M" textAlignment="CENTER" textFill="#e41173" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btnGetStarted" layoutX="167.0" layoutY="524.0" onMouseClicked="#openStage" styleClass=".button" text="GET STARTED">
+                           <tooltip>
+                              <Tooltip text="Open FreeSolo" />
+                           </tooltip>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXToggleButton layoutX="14.0" layoutY="509.0" text="UNDER 18 ?" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
