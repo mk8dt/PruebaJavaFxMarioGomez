@@ -12,7 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-// TODO: Auto-generated Javadoc
+
 /**
  * The Class SampleController.
  * esta es la clase que controla los dos stages.
@@ -31,7 +31,7 @@ public class SampleController {
 	@FXML
     private JFXButton btnGetStarted;
 	
-	/** The btn get started. Este es el boton que nos cierra la app.*/
+	/** The btn get started. Este es el boton que nos cierra la app .*/
     @FXML
     private JFXButton btnClose;
     /**
